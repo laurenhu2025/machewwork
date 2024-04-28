@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="Light Gray and Black Modern Restaurant Logo.png" class="logo" alt="Restaurant Logo">
+        <img src="https://github.com/laurenhu2025/machewwork/blob/main/Light%20Gray%20and%20Black%20Modern%20Restaurant%20Logo.png?raw=true" class="logo" alt="Restaurant Logo">
         <h1>Customer Invoice</h1>
         <p>Enter Invoice ID Number</p>
         <label for="Invoice">Invoice:</label>
@@ -15,19 +15,41 @@
         <button onclick="submitInvoice()">Submit</button>
     </div>
 
-    <script>
-        function submitInvoice() {
-            var invoiceNumber = document.getElementById("Invoice").value;
-            // Check if the invoice number is 69539767
-            if (invoiceNumber === "69539767") {
-                // Redirect to another page
-                window.location.href = "fashion-invoice.html"; // Replace with the URL of the fashion invoice page
-            } else {
-                // Handle invalid invoice number
-                alert("Invalid invoice number. Please try again.");
-            }
+  
+
+  
+
+        <script>
+
+    function submitInvoice() {
+
+        var invoiceNumber = document.getElementById("Invoice").value;
+        
+        // Check invoice number and redirect accordingly
+        if (invoiceNumber === "69539767") {
+            // Redirect to Rick Invoice
+            window.location.href = "Rick_Invoice";
+        
+        } else if (invoiceNumber === "66785395") {
+            // Redirect to another page for invoice number 66785395 (Paul)
+            window.location.href = "Paul_Brown";
+        } else if (invoiceNumber === "23456743") {
+            // Redirect to another page for invoice number 23456743
+            window.location.href = "Khris_Rock";
+        } else if (invoiceNumber === "45683078") {
+            // Redirect to another page for invoice number 45683078
+            window.location.href = "Derrick_Alonzo";
+        } else if (invoiceNumber === "87654523") {
+            // Redirect to another page for invoice number 87654523
+            window.location.href = "Hardy_Lester";
+        } else {
+            // Handle invalid invoice number
+            alert("Invalid invoice number. Please try again.");
         }
-    </script>
+    }
+</script>
+
+
 </body>
 </html>
 
